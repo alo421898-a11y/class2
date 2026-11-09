@@ -1,0 +1,85 @@
+.head {
+    background: #1A4E8A;
+    border-radius: 0 0 8px 8px;
+    padding: 0;
+
+}
+
+*{
+    font-family: Georgia;
+}
+.tax {
+    color: white;
+    font-size: 32px;
+    font-family: Georgia;
+    font-family: Georgia;
+    font-weight: 700;
+    font-style: Bold;
+    line-height: 60px;
+    letter-spacing: 0.5px;
+
+}
+
+.container {
+    background-color: #e4dada;
+    margin: 0 auto 0 ;
+    padding: 0 16px;
+    max-width: 900px;
+}
+
+body ,h1 ,h2 ,h3 ,h4 ,h5 ,h6 ,p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+
+}
+.p1 {
+    font-family: Georgia;
+    font-style: Italic;
+    font-size: 15.2px;
+    color:#C8D8EF;
+
+
+}
+ a {
+    width: 87.9375;
+    height: 36.4765625;
+    opacity: 1;
+    left: 71.01px;
+    border-radius: 4px;
+    background: #2A6AB5;
+    text-decoration: none;
+    padding: 6px 12px;
+    color: #FFFFFF;
+
+}
+
+.line {
+    height: 1px;
+    background-color: #2A6AB5;
+    margin: 24px 0 36px 0;
+}
+.label1{
+
+    font-size: 13.6px;
+    color: #C8D8EF;
+
+
+
+}
+
+.serch-input {
+    margin-top: 32px;
+    padding: 10px 12px;
+    border: none ;
+}
+.serch-but {
+    padding: 10px 12px;
+    border: none ;
+    color :white;
+    background-color: #2A6AB5;
+}
+

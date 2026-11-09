@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" >
+<head >
+    <div class="container">
+    <div class="head">
+    <fieldset>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 
-    <h1>Taxpayer Portal</h1>
-    <p> Online Tax Services</p>
+    <h1 class="tax">Taxpayer Portal</h1>
+    <p class="p1"> Online Tax Services</p>
     <nav>
         <ul>
             <a href="#">Home</a>
@@ -17,14 +21,18 @@
             
         </ul>
     </nav>
+    <div class="line"></div>
 
     
     <form>
-        <label for="search">Search the portal</label>
-        <input type="text" placeholder="e.g. VAT return">
-        <button type="submit">Search</button>
-
+        <label for="search" class="label1">Search the portal</label>
+        <div>
+        <input class="serch-input" type="text" placeholder="e.g. VAT return">
+        <button class="serch-but"type="submit">Search</button>
+        </div>
     </form>
+    </fieldset>
+    </div>
 </head>
 <body>
     <h2>Welcome to the Portal</h2>
@@ -187,5 +195,6 @@
     </ul>
 </nav>
 </footer>
+</div>
 </body>
 </html>
