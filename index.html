@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head >
-    <div class="container">
-    <div class="head">
-    <fieldset>
+<head >  
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theem.css">
+    <link rel="stylesheet" href="reset.css">
+
+
+</head>
+
+<body> 
+    
+    <div class="container">
+    <header >
+       
+    <div class="head">
+    <fieldset>
 
     <h1 class="tax">Taxpayer Portal</h1>
     <p class="p1"> Online Tax Services</p>
-    <nav>
-        <ul>
+    <nav class="sticky-nav">
+        
             <a href="#">Home</a>
             <a href="#">Tax Filing</a>
             <a href="#">Payments</a>
             <a href="#">Support</a>
             <a href="#">About</a>
             
-        </ul>
+        
     </nav>
     <div class="line"></div>
 
@@ -33,8 +44,22 @@
     </form>
     </fieldset>
     </div>
-</head>
-<body>
+    </header>
+
+    <main>
+         <nav class="sticky-nav">
+            <ul>
+        
+            <a href="#">Home</a>
+            <a href="#">Tax Filing</a>
+            <a href="#">Payments</a>
+            <a href="#">Support</a>
+            <a href="#">About</a>
+        </ul>
+        
+    </nav>
+
+    <section class="welcome">
     <h2>Welcome to the Portal</h2>
     <p>This online system allows registered taxpayers to <b>file returns</b>, <i>manage payments</i>,
          and track submissions online. The portal is designed to simplify communication between 
@@ -48,28 +73,33 @@
     <img src="Figure.png" alt="Tax Filing" >
     </figure>
 
+    </section>
+    <article class="announcement">
+
     <h2>
         Announcement: VAT Filing Deadline Extended
     </h2>
-    <p>The deadline for quarterly VAT filing has been extended by two weeks to accommodate 
+    <p class="p2">The deadline for quarterly VAT filing has been extended by two weeks to accommodate 
         the recent system maintenance window. </p>
 
     <figure>
         <blockquote>    
             <p>All pending VAT submissions will now be accepted until the end of the month without penalty.</p>
         </blockquote>
-        <figcaption><samp>Source: Portal Communications Team</samp></figcaption>
+        
     </figure>
+    <figcaption><samp>Source: Portal Communications Team</samp></figcaption>
 
     <footer> 
         <p>Published: 20 July 2026</p>
     </footer>
+    </article>
 
-<section>
+<section class="filling-types">
     <h2>Recent Filing Types</h2>
     
 
-    <table border="">
+    <table cellpadding="12" cellspacing="0">
         <caption>Filing status for the current period</caption>
         <thead>
             <tr>
@@ -80,17 +110,17 @@
         </thead>
         <tbody>
             <tr>
-                <td>VAT</td>
+                <th>VAT</th>
                 <td>Q2 2026</td>
                 <td>Submitted </td>
             </tr>
             <tr>
-                <td>CIT</td>
+                <th>CIT</th>
                 <td>2025 Annual</td>
                 <td>Pending</td>
             </tr>
             <tr>
-                <td>PIT</td>
+                <th>PIT</th>
                 <td>2025 Annual</td>
                 <td>Draft</td>
             </tr>
@@ -98,13 +128,16 @@
         </tbody>
 
     </table>
-    <div>
+    <div > 
+    <div class="progress-warp">
         <label for="completion">Overall filing completion this quarter: </label>
         <progress id="completion" value="70" max="100">70%</progress>
     </div>
-    <div>
+    <div class="progress-warp">
         <label for="completion">Average review score for submitted filings: </label>
         <progress id="completion" value="82" max="100">82%</progress>
+    </div>
+
     </div>
 </section>
 <fieldset>
@@ -195,6 +228,8 @@
     </ul>
 </nav>
 </footer>
+</div>
+</main>
 </div>
 </body>
 </html>
