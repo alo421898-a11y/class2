@@ -22,7 +22,7 @@
 
     <h1 class="tax">Taxpayer Portal</h1>
     <p class="p1"> Online Tax Services</p>
-    <nav class="sticky-nav">
+    <nav class="sticky-nav" >
         
             <a href="#">Home</a>
             <a href="#">Tax Filing</a>
@@ -32,6 +32,8 @@
             
         
     </nav>
+    </fieldset>
+
     <div class="line"></div>
 
     
@@ -44,6 +46,7 @@
     </form>
     </fieldset>
     </div>
+
     </header>
 
     <main>
@@ -58,7 +61,7 @@
         </ul>
         
     </nav>
-
+</div>
     <section class="welcome">
     <h2>Welcome to the Portal</h2>
     <p>This online system allows registered taxpayers to <b>file returns</b>, <i>manage payments</i>,
@@ -141,26 +144,27 @@
     </div>
 </section>
 <fieldset>
-
-<form>
+<section class="regis-payment">
+<form >
     <h2>Register a Payment</h2>
-    <fieldset>
-        <legend>Personal details</legend>
-        <label for="customer_name">Full Name</label>
+    <span class="secure-lable">secure</span>
+    <fieldset class="border">
+        <p class="legend-p">Personal details</p>
+        <label for="customer_name" class="lable-form">Full Name</label>
         <input type="text" id="customer_name" name="customer_name"required>
         <br>
-        <label for="email">Email Address</label>
+        <label for="email" class="lable-form">Email Address</label>
         <input type="email" id="email" name="email"required>
     </fieldset>
     <br>
-    <fieldset>
-        <legend>Payment details</legend>
-        <label for="amount">Amount (OMR)</label>
+    <fieldset class="border">
+        <p class="legend-p">Payment details</p>
+        <label for="amount" class="lable-form">Amount (OMR)</label>
         <input type="number" id="amount" name="amount" step="0.01" min="0" required>
         <small> Enter the amount in Omani Rials, up to two decimal places.</small>
         <br>
         
-        <label for="tax-type">Tax Type</label>
+        <label for="tax-type" >Tax Type</label>
         <select id="tax-type" name="tax-type" required>
             <option value="">Select a tax type</option>
             <option value="vat">VAT</option>
@@ -171,36 +175,39 @@
     </fieldset>
     
     <lapel>
-        <input type="checkbox" id="terms" name="terms">
+        <input class="checkbox" id="terms" name="terms" type="checkbox">
         <label for="terms"> I confirm the information above is accurate </label>
     </lapel>
     <br>
     <lapel>
-        <button type="submit">Submit Payment</button>
-        <button type="clear">Clear Form</button>
+        <button type="submit" class="button-2">Submit Payment</button>
+        <button type="clear" class="button-2">Clear Form</button>
     </lapel>
 </form>
 </fieldset>
-<nav>
+</section>
+<div class="quick" >
     <h2>Quick Links</h2>
+<nav >
+    
     <ol>
-        <li><a href="#">How to file a VAT return</a></li>
-        <li><a href="#">Payment methods accepted</a></li>
-        <li><a href="#">Download tax certificates</a></li>
-        <li><a href="#">Contact a support agent</a></li>
+        <li class="link"><a >How to file a VAT return</a></li>
+        <li class="link"><a >Payment methods accepted</a></li>
+        <li class="link"><a >Download tax certificates</a></li>
+        <li class="link"><a >Contact a support agent</a></li>
         
     </ol>
 </nav>
-<h4>Key Terms</h4>
+<h3>Key Terms</h3>
+<dl>
+<dt>VAT</dt>
+<dd>A tax added to most goods and services at the point of sale.</dd>
 
-<strong>VAT</strong>
-<p>A tax added to most goods and services at the point of sale.</p>
-
-<strong>Filing Period</strong>
-<p>The date range a given return or payment covers.</p>
-
-<section>
-    <h2>Frequently Asked Questions</h2>
+<dt>Filing Period</dt>
+<dd>The date range a given return or payment covers.</dd>
+</dl>
+<div>
+    <h3>Frequently Asked Questions</h3>
     <details open>
         <summary>What happens if I miss a filing deadline?</summary>
         <p>the responce phares for 431</p>
@@ -212,7 +219,8 @@
             <li>200GB RAM.</li>
             <li>4PB storege</li>
     </details>
-</section>
+</div>
+</div>
 
 <footer>
     <p><small>© 2026 Taxpayer Portal. All rights reserved</small>  </p>
